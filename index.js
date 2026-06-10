@@ -5,7 +5,7 @@ const PORT = 3000;
 
 app.use(express.static("public"));
 
-app.get("/api/status", (req, res) => {
+app.get("/", (req, res) => {
     res.json({
         message: "Application GreenFood fonctionne"
     });
